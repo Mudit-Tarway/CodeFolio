@@ -1,0 +1,137 @@
+.ParentDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f9fbfc 60%, #f4fafe 100%);
+  padding: 80px 0;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.Child1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageTag {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid rgba(207,233,255,0.8);
+  box-shadow: 0 9px 32px 0 rgba(63,111,203,0.10), 0 2px 7px 0 rgba(0,0,0,0.10);
+  background: #f5fbff;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.imageTag:hover, .imageTag:focus {
+  box-shadow: 0 18px 42px 0 rgba(63,111,203,0.12), 0 6px 14px 0 rgba(0,0,0,0.11);
+  transform: scale(1.04);
+}
+
+.Child2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  max-width: 540px;
+}
+
+.Intro {
+  font-size: 22px;
+  color: #288cee;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.Name {
+  font-size: 54px;
+  font-weight: 800;
+  color: #20252b;
+  margin-bottom: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.Title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff3997;
+  margin-bottom: 22px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.Description {
+  font-size: 20px;
+  color: #4a5059;
+  line-height: 1.45;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+
+/* Responsive for mobiles/tablets */
+@media (max-width: 900px) {
+  .ParentDiv {
+    flex-direction: column;
+    gap: 24px;
+    padding: 34px 0;
+  }
+  .imageTag {
+    width: 220px;
+    height: 220px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Child2 {
+    padding-left: 0;
+    max-width: 98vw;
+    align-items: center;
+    text-align: center;
+  }
+  .Name {
+    font-size: 33px;
+  }
+  .Title {
+    font-size: 20px;
+  }
+  .Description {
+    font-size: 17px;
+  }
+}
+
+.aboutBtn {
+  font-size: 17px;
+  padding: 11px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.aboutBtn.primary {
+  background: #288cee;
+  color: white;
+  box-shadow: 0 2px 6px rgba(40,140,238,0.10);
+}
+
+.aboutBtn.primary:hover {
+  background: #236fcb;
+}
+
+.aboutBtn.secondary {
+  background: #fff;
+  color: #20252b;
+  border: 1.5px solid #eee;
+  box-shadow: 0 2px 6px rgba(100,116,139,0.07);
+}
+
+.aboutBtn.secondary:hover {
+  background: #f7f7fd;
+  color: #288cee;
+}
