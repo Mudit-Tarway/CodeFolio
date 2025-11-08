@@ -41,7 +41,7 @@ export const Project = () => {
       technologies: ['React', 'CSS'],
       githubLink: 'https://github.com/Mudit-Tarway/CodeFolio',
       Link: 'https://codefolio-mudit.netlify.app/',
-      category: 'ReactJS , CSS'
+      category: 'Frontend'
     },
     {
       id: 5,
