@@ -27,7 +27,7 @@ const Contact = () => {
             <p>or connect with me in </p>
             <FaLinkedin />{" "}
             <a
-              href="https://www.linkedin.com/in/mudit-tarway-927ba5244/"
+              href="https://www.linkedin.com/in/mudittarway/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -35,7 +35,7 @@ const Contact = () => {
             </a>
             <FaGithub />{" "}
             <a
-              href="https://github.com/mudittarway"
+              href="https://github.com/Mudit-Tarway"
               target="_blank"
               rel="noopener noreferrer"
             >
