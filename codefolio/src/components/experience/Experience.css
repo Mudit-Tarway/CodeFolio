@@ -1,0 +1,190 @@
+.Header{
+    text-align : center;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom : 40px;
+}
+
+.timeline-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #222;
+}
+
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 80px; 
+  transform: translateX(-50%);
+  width: 4px;
+  height: calc(100% - 80px);
+  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+  z-index: 0;
+}
+
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-bottom: 60px; 
+  min-height: 200px; 
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.timeline-item.left .timeline-icon {
+  right: -20px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -20px;
+}
+
+
+.dsa-icon { color: #6a11cb; }
+.python-icon { color: #2575fc; }
+
+
+.timeline-content {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.timeline-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.completed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.ongoing {
+  background-color: #ffc107;
+  color: #222;
+}
+
+
+.cert-icon {
+  margin-right: 5px;
+  color: #ffd700;
+}
+
+
+.timeline-content a {
+  color: #fff;
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+
+.timeline-content a:hover {
+  opacity: 0.8;
+}
+
+
+.timeline-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+    top: 80px;
+  }
+
+  .timeline-item, 
+  .timeline-item.left, 
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item.left .timeline-icon,
+  .timeline-item.right .timeline-icon {
+    left: 0;
+    right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-icon {
+    width: 30px;
+    height: 30px;
+    top: 15px;
+  }
+}
