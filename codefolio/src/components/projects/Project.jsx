@@ -10,7 +10,6 @@ export const Project = () => {
       image: './public/MovieSearch.png', 
       technologies: ['HTML', 'API Integration', 'CSS3', 'JavaScript'],
       githubLink: 'https://github.com/Mudit-Tarway/Movie-Search-API',
-      Link : 'https://youtu.be/Mp403kn_CV0',
       category: 'Frontend'
     },
     {
@@ -20,7 +19,6 @@ export const Project = () => {
       image: './public/UpQuiz.png',
       technologies: ['HTML', 'CSS', 'Chart.js' , 'JavaScript'],
       githubLink: 'https://github.com/Mudit-Tarway/UpQuiz',
-      liveLink: 'https://upquiz.netlify.app/',
       category: 'Frontend'
     },
     {
@@ -30,7 +28,6 @@ export const Project = () => {
       image: './public/Todo.jpg',
       technologies: ['React', 'BootStrap', 'Node.js', 'Express', 'MongoDB'],
       githubLink: 'https://github.com/Mudit-Tarway/Todo-App',
-      Link: 'https://youtu.be/5pebvylRM-Q',
       category: 'Full-Stack'
     },
     {
@@ -40,7 +37,6 @@ export const Project = () => {
       image: './public/Portfolio.png',
       technologies: ['React', 'CSS'],
       githubLink: 'https://github.com/Mudit-Tarway/CodeFolio',
-      Link: 'https://codefolio-mudit.netlify.app/',
       category: 'Frontend'
     },
     {
@@ -50,8 +46,15 @@ export const Project = () => {
       image: '/public/backend.jpg',
       technologies: ['Node.js', 'Express', 'MongoDB'],
       githubLink: 'https://github.com/Mudit-Tarway/Coursera',
-      Link: 'https://github.com/Mudit-Tarway/Coursera',
       category: 'Backend Development'
+    },{
+      id: 6,
+      title: 'Student Performance Prediction System',
+      description: 'A machine learning model that predicts student performance based on various factors such as attendance, grades, and study habits.',
+      image: '/public/StudentPerformance.png',
+      technologies: ['Python', 'Scikit-learn', 'Pandas' , 'NumPy' , 'Matplotlib', 'Seaborn', 'Jupyter Notebook', 'Machine Learning', 'Data Analysis', 'Data Visualization', 'Regression' , 'Classification'],
+      githubLink: 'https://github.com/Mudit-Tarway/Student-Performance-Prediction-',
+      category: 'Machine Learning'
     }
 
   ];
@@ -91,14 +94,6 @@ export const Project = () => {
                   className="project-link github-link"
                 >
                   <i className="fab fa-github"></i> GitHub
-                </a>
-                <a 
-                  href={project.liveLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="project-link live-link"
-                >
-                  <i className="fas fa-external-link-alt"></i> Live Demo
                 </a>
               </div>
             </div>

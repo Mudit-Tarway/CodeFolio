@@ -27,7 +27,7 @@ function ExperienceTimeline() {
           <FaPython size={30} />
         </div>
         <div className="timeline-content">
-          <h3>IBM Virtual Internship -  Python & ML <span className="badge ongoing">Ongoing</span></h3>
+          <h3>IBM Virtual Internship -  Python & ML <span className="badge completed">Completed</span></h3>
           <ul>
             <li>Learning Python libraries: NumPy, Pandas, Matplotlib, Scikit-learn.</li>
             <li>Working on machine learning and data analysis projects.</li>

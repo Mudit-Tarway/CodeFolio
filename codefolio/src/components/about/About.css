@@ -3,8 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #f9fbfc 60%, #f4fafe 100%);
-  padding: 80px 0;
+  background: white;
   margin-top: 40px;
   margin-bottom: 60px;
   gap: 40px;
